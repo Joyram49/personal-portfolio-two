@@ -1,0 +1,91 @@
+.contact__container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 30% 65%;
+  gap: 5%;
+  margin: 5rem auto;
+}
+.contact__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 2rem;
+}
+.contact__card {
+  width: 70%;
+  height: auto;
+  background-color: var(--color-bg-variant);
+  text-align: center;
+  padding: 1rem 0 1rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.contact__card:hover {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-light);
+}
+.contact__icon {
+  font-size: 1.4rem;
+}
+.contact__card h5 {
+  color: var(--color-light);
+}
+.contact__card a {
+  font-size: 0.9rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  width: 70%;
+  margin: 1rem 0;
+  padding: 1rem 0.8rem;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-variant);
+  border-radius: 0.4rem;
+  color: var(--color-white);
+}
+textarea {
+  max-width: 70%;
+  min-width: 20%;
+  max-height: 15rem;
+  min-height: 2rem;
+}
+
+/* ================  MEDIA QUERIES (MEDEIUM DEVICES) ================ */
+
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    width: 50%;
+    grid-template-columns: 1fr;
+    margin: 3rem auto;
+  }
+  .contact__cards {
+    margin-left: 0;
+  }
+}
+
+/* ================  MEDIA QUERIES (SMALL DEVICES) ================ */
+
+@media screen and (max-width: 600px) {
+  .contact__container {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .contact__card {
+    width: 100%;
+  }
+  input,
+  textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem 0.6rem;
+  }
+  textarea {
+    max-width: 100%;
+    max-height: 8rem;
+  }
+}

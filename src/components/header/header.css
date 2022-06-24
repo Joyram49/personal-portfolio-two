@@ -1,0 +1,82 @@
+header {
+  width: 100%;
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+.container__header {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+.cta__header {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.img__header {
+  width: 22rem;
+  height: 30rem;
+  background: linear-gradient(var(--color-primary), transparent);
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 2rem;
+  border-radius: 12rem 12rem 0 0;
+  padding: 5rem 1.5rem 1.5rem 1.5rem;
+  overflow: hidden;
+}
+
+.socials__header {
+  position: absolute;
+  bottom: 4rem;
+  left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.socials__header a {
+  font-size: 1.4rem;
+}
+.socials__header span {
+  width: 0.1rem;
+  height: 1.6rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.socials__header span:hover {
+  background-color: var(--color-white);
+}
+
+.contact__header {
+  position: absolute;
+  right: -2.5rem;
+  bottom: 6rem;
+  color: var(--color-primary);
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  transform: rotate(90deg);
+}
+
+/* ================  MEDIA QUERIES (MEDEIUM DEVICES) ================ */
+
+@media screen and (max-width: 1024px) {
+  header {
+    height: 75vh;
+  }
+}
+
+/* ================  MEDIA QUERIES (SMALL DEVICES) ================ */
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  .socials__header,
+  .contact__header {
+    display: none;
+  }
+}
